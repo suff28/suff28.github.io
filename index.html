@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammed Sufiyan — Data & AI Portfolio</title>
+  <meta
+    name="description"
+    content="Portfolio of Mohammed Sufiyan: data engineering, applied analytics, machine learning projects, IEEE research, and full-stack data systems."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23070917'/%3E%3Cpath d='M18 42V20h7l7 12 7-12h7v22h-6V30l-6 10h-4l-6-10v12z' fill='%236bf0d2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#top">Mohammed Sufiyan</a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
+        <a class="resume-link" href="https://github.com/suff28" target="_blank" rel="noreferrer">GitHub →</a>
+      </nav>
+      <button class="menu-button" id="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#experience">Experience</a>
+      <a href="#certifications">Certifications</a>
+      <a href="https://github.com/suff28" target="_blank" rel="noreferrer">GitHub →</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-gradient"></div>
+      <div class="hero-noise"></div>
+      <div class="profile-orbit" aria-hidden="true">
+        <img src="https://github.com/suff28.png" alt="">
+      </div>
+
+      <svg class="mountains" aria-hidden="true" viewBox="0 0 1440 820" preserveAspectRatio="xMidYMax slice">
+        <path class="ridge ridge-1" d="M0 820L0 580L75 542L150 488L230 426L304 455L370 408L440 346L508 385L585 324L665 366L742 304L820 254L900 300L980 366L1054 315L1130 374L1212 312L1290 366L1370 436L1440 490L1440 820Z"></path>
+        <path class="ridge ridge-2" d="M0 820L0 644L72 596L145 552L222 500L294 532L368 470L440 432L515 470L588 420L660 455L732 408L806 352L878 390L952 346L1026 404L1100 438L1174 388L1250 430L1324 488L1440 560L1440 820Z"></path>
+        <path class="ridge ridge-3" d="M0 820L0 708L68 668L136 630L210 584L282 626L356 574L430 520L504 560L578 510L650 466L724 508L798 462L872 505L946 550L1020 505L1092 548L1168 592L1242 548L1318 510L1440 640L1440 820Z"></path>
+        <path class="ridge ridge-4" d="M0 820L0 752L64 714L126 682L190 720L254 680L318 636L384 680L452 630L522 670L592 618L662 660L732 610L802 650L872 690L942 640L1012 682L1082 720L1152 672L1224 630L1296 680L1370 716L1440 760L1440 820Z"></path>
+      </svg>
+
+      <div class="hero-content">
+        <p class="eyebrow">Portfolio</p>
+        <h1>
+          Meet Mohammed,<br>
+          a <span class="role-wrap">
+            <button class="role-select" type="button" id="role-select" aria-haspopup="listbox" aria-expanded="false">
+              Data Engineer
+            </button>
+            <span class="role-menu" id="role-menu" role="listbox"></span>
+          </span>
+        </h1>
+        <p class="hero-copy" id="hero-copy"></p>
+        <div class="hero-actions">
+          <a href="#projects">View Projects <span>→</span></a>
+          <a href="#research">Read Research <span>→</span></a>
+          <a href="#timeline">Timeline <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="page-shell">
+      <section class="section" id="projects">
+        <div class="section-top">
+          <div>
+            <p class="section-kicker">Work</p>
+            <h2>Projects</h2>
+          </div>
+          <a class="section-link" href="https://github.com/suff28" target="_blank" rel="noreferrer">GitHub Profile →</a>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+      </section>
+
+      <section class="section" id="research">
+        <div class="section-top">
+          <div>
+            <p class="section-kicker">Research</p>
+            <h2>Research & Publications</h2>
+          </div>
+          <a class="section-link" href="https://scholar.google.com/citations?user=XSDrhfMAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar →</a>
+        </div>
+        <div class="research-grid" id="research-list"></div>
+      </section>
+
+      <section class="section timeline-section" id="timeline">
+        <div class="section-top">
+          <div>
+            <p class="section-kicker">Timeline</p>
+            <h2>Journey</h2>
+          </div>
+        </div>
+        <div class="timeline-board" id="timeline-board"></div>
+        <p class="timeline-note">Project, job, education, and research milestones from undergraduate work through BU.</p>
+      </section>
+
+      <section class="section row-section" id="experience">
+        <div class="section-top">
+          <div>
+            <p class="section-kicker">Experience</p>
+            <h2>Work Experience</h2>
+          </div>
+        </div>
+        <div class="row-list" id="experience-list"></div>
+      </section>
+
+      <section class="section row-section" id="education">
+        <div class="section-top">
+          <div>
+            <p class="section-kicker">Background</p>
+            <h2>Education</h2>
+          </div>
+        </div>
+        <div class="row-list" id="education-list"></div>
+      </section>
+
+      <section class="section" id="certifications">
+        <div class="section-top">
+          <div>
+            <p class="section-kicker">Proof</p>
+            <h2>Certifications</h2>
+          </div>
+          <a class="section-link" href="https://github.com/suff28/certificates" target="_blank" rel="noreferrer">Certificate Repository →</a>
+        </div>
+        <div class="certificate-grid" id="certificate-grid"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="footer-inner">
+      <div>
+        <h2>Mohammed Sufiyan</h2>
+        <p>MS Applied Data Analytics at Boston University. Building data systems, analytics dashboards, applied AI projects, and research-backed ML work.</p>
+      </div>
+      <div class="footer-col">
+        <p>Explore</p>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#certifications">Certifications</a>
+        <a href="https://github.com/suff28" target="_blank" rel="noreferrer">GitHub →</a>
+      </div>
+      <div class="footer-col">
+        <p>Connect</p>
+        <a href="mailto:suff280602@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/suff28" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/suff28" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=XSDrhfMAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./data.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
