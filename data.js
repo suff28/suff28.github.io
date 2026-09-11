@@ -51,6 +51,7 @@ window.PORTFOLIO_DATA = {
         "Presented BU Urban Heat Island research at ACSP 2026 in Pittsburgh, Pennsylvania."
       ],
       links: [
+        { label: "Portfolio Case Study", href: "#cleancampus" },
         { label: "GitHub", href: "https://github.com/suff28/cleancampus-urban-heat-island" },
         { label: "Live Demo", href: "https://suff28.github.io/cleancampus-urban-heat-island/" }
       ]
@@ -116,11 +117,12 @@ window.PORTFOLIO_DATA = {
       title: "CleanCampus Urban Heat Island Dashboard",
       category: "IoT / Data Platform",
       description:
-        "Built a BU IoT monitoring dashboard with Node.js REST APIs, PostgreSQL, Leaflet maps, PM2/nginx, and DigitalOcean to collect live environmental sensor data, track campus zones, surface alerts, and export field readings.",
+        "Built a BU IoT monitoring platform with field sensors, Raspberry Pi gateway ingestion, Node.js REST APIs, PostgreSQL, Leaflet maps, alerts, trends, and CSV export for urban heat island research.",
       tags: ["Node.js", "PostgreSQL", "Leaflet", "IoT", "DigitalOcean"],
-      image: "",
+      image: "./assets/cleancampus/01-dashboard-real-capture.png",
       alt: "CleanCampus Urban Heat Island dashboard",
       links: [
+        { label: "Case Study", href: "#cleancampus" },
         { label: "GitHub", href: "https://github.com/suff28/cleancampus-urban-heat-island" },
         { label: "Live Demo", href: "https://suff28.github.io/cleancampus-urban-heat-island/" }
       ]
@@ -198,6 +200,63 @@ window.PORTFOLIO_DATA = {
       ]
     }
   ],
+  cleancampus: {
+    title: "CleanCampus Urban Heat Island IoT Platform",
+    subtitle:
+      "A BU Research Assistant project connecting environmental field sensors, gateway data ingestion, PostgreSQL storage, and a live web dashboard for campus-scale heat monitoring.",
+    role: "Graduate Research Assistant",
+    meta: "Boston University • Jan 2026 - Aug 2026",
+    stack: ["Node.js", "PostgreSQL", "REST APIs", "Leaflet", "PM2", "nginx", "DigitalOcean", "CSV Export"],
+    links: [
+      { label: "GitHub", href: "https://github.com/suff28/cleancampus-urban-heat-island" },
+      { label: "Live Demo", href: "https://suff28.github.io/cleancampus-urban-heat-island/" }
+    ],
+    overview:
+      "I built the data path from campus sensors to a research dashboard: validating incoming readings, storing them in normalized PostgreSQL tables, mapping sensor locations, surfacing stale/missing-data alerts, and making readings exportable for analysis.",
+    highlights: [
+      "Designed the sensor, gateway, zone, reading, and alert data model so field data could be queried reliably.",
+      "Built Node.js REST endpoints for registered sensor ingestion and dashboard requests.",
+      "Created Leaflet map views, zone and sensor filters, environmental trend panels, alert summaries, and CSV export.",
+      "Connected technical work with field deployment, professor feedback, and BU urban heat island research needs."
+    ],
+    gallery: [
+      {
+        title: "Live IoT dashboard",
+        caption: "Map, zone filtering, missing-data alerts, environmental trends, and export controls for campus sensors.",
+        image: "./assets/cleancampus/01-dashboard-real-capture.png"
+      },
+      {
+        title: "Sensor data pipeline",
+        caption: "Field readings move from sensors to a Raspberry Pi gateway, through the Express API, into PostgreSQL, and back to the UI.",
+        image: "./assets/cleancampus/03-live-data-pipeline.gif"
+      },
+      {
+        title: "Fieldwork with professors",
+        caption: "Worked with Professor Bora Eryilmaz and Professor Yesim Sungu-Eryilmaz on field deployment and dashboard requirements.",
+        image: "./assets/cleancampus/04-fieldwork-with-professors.png"
+      },
+      {
+        title: "Sensor deployment",
+        caption: "Outdoor and indoor sensor placements for temperature, humidity, voltage, RSSI, and SNR monitoring across campus zones.",
+        image: "./assets/cleancampus/05-sensor-deployment-collage.png"
+      },
+      {
+        title: "Backend and frontend logic",
+        caption: "API validation, registered sensor checks, PostgreSQL inserts, bounded dashboard fetches, and safe UI requests.",
+        image: "./assets/cleancampus/02-code-overview-detailed.png"
+      },
+      {
+        title: "Planning before implementation",
+        caption: "Notebook planning for schemas, sensor fields, gateway-to-dashboard flow, and database/API behavior.",
+        image: "./assets/cleancampus/07-planning-notes-collage.png"
+      },
+      {
+        title: "Performance evaluation feedback",
+        caption: "BU evaluation feedback noted strong technical skills, attention to detail, responsiveness, and clear presentation.",
+        image: "./assets/cleancampus/06-evaluation-feedback.png"
+      }
+    ]
+  },
   education: [
     {
       title: "MS in Applied Data Analytics",
@@ -296,8 +355,8 @@ window.PORTFOLIO_DATA = {
     }
   ],
   resume: {
-    href: "https://github.com/suff28",
-    label: "View GitHub"
+    href: "./assets/docs/Mohammed_Sufiyan_Resume.pdf",
+    label: "View Resume"
   },
   github: {
     href: "https://github.com/suff28",

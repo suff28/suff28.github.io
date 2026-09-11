@@ -12,6 +12,8 @@ const experienceList = document.getElementById("experience-list");
 const educationList = document.getElementById("education-list");
 const timelineBoard = document.getElementById("timeline-board");
 const certificateGrid = document.getElementById("certificate-grid");
+const cleancampusCase = document.getElementById("cleancampus-case");
+const cleancampusLinks = document.getElementById("cleancampus-links");
 
 const roles = [
   {
@@ -81,8 +83,11 @@ function actionLinks(links = []) {
     <div class="card-actions">
       ${links
         .map(
-          (link) =>
-            `<a href="${escapeHtml(link.href)}" target="_blank" rel="noreferrer">${escapeHtml(link.label)} →</a>`
+          (link) => {
+            const isAnchor = String(link.href || "").startsWith("#");
+            const attrs = isAnchor ? "" : ' target="_blank" rel="noreferrer"';
+            return `<a href="${escapeHtml(link.href)}"${attrs}>${escapeHtml(link.label)} →</a>`;
+          }
         )
         .join("")}
     </div>
@@ -134,6 +139,53 @@ function renderProjects() {
       `
     )
     .join("");
+}
+
+function renderCleanCampusCase() {
+  if (!cleancampusCase || !data.cleancampus) {
+    return;
+  }
+
+  const item = data.cleancampus;
+
+  cleancampusLinks.innerHTML = actionLinks(item.links);
+  cleancampusCase.innerHTML = `
+    <div class="case-hero reveal">
+      <div class="case-copy">
+        <p class="eyebrow">${escapeHtml(item.role)}</p>
+        <h3>${escapeHtml(item.title)}</h3>
+        <p class="case-meta">${escapeHtml(item.meta)}</p>
+        <p>${escapeHtml(item.subtitle)}</p>
+        <p>${escapeHtml(item.overview)}</p>
+        <div class="tag-row">
+          ${item.stack.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}
+        </div>
+      </div>
+      <div class="case-preview">
+        <img src="${escapeHtml(item.gallery[0].image)}" alt="${escapeHtml(item.gallery[0].title)}">
+      </div>
+    </div>
+    <div class="case-highlights reveal">
+      ${item.highlights.map((highlight) => `<p>${escapeHtml(highlight)}</p>`).join("")}
+    </div>
+    <div class="case-gallery">
+      ${item.gallery
+        .map(
+          (asset, index) => `
+            <article class="case-media reveal${index === 0 ? " is-wide" : ""}">
+              <a href="${escapeHtml(asset.image)}" target="_blank" rel="noreferrer">
+                <img src="${escapeHtml(asset.image)}" alt="${escapeHtml(asset.title)}">
+              </a>
+              <div>
+                <h4>${escapeHtml(asset.title)}</h4>
+                <p>${escapeHtml(asset.caption)}</p>
+              </div>
+            </article>
+          `
+        )
+        .join("")}
+    </div>
+  `;
 }
 
 function renderResearch() {
@@ -278,6 +330,7 @@ function setRevealMotion() {
 renderRoles();
 setRole(0);
 renderProjects();
+renderCleanCampusCase();
 renderResearch();
 renderTimeline();
 renderRows(data.experience, experienceList);
