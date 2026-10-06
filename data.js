@@ -120,7 +120,7 @@ window.PORTFOLIO_DATA = {
       title: "FinGuard Real-Time Fraud Intelligence Platform",
       category: "Streaming Data Platform",
       description:
-        "Built a real-time fraud detection platform with Redpanda/Kafka, Python producer/consumer services, PostgreSQL, Redis, FastAPI, Streamlit, and Docker to process card transactions and surface high-risk alerts.",
+        "Real-time fraud detection system with Redpanda/Kafka, Python producer/consumer services, PostgreSQL, Redis, FastAPI, Streamlit, and Docker. Scores card transactions and surfaces high-risk alerts through API and dashboard layers.",
       tags: ["Python", "Redpanda/Kafka", "PostgreSQL", "Redis", "FastAPI", "Docker"],
       image: "",
       alt: "FinGuard fraud intelligence platform",
@@ -132,7 +132,7 @@ window.PORTFOLIO_DATA = {
       title: "DataPulse AI Self-Healing Data Pipeline",
       category: "Data Reliability Platform",
       description:
-        "Built a data reliability platform with Pandas, PostgreSQL, FastAPI, Streamlit, and Docker to normalize messy CSV feeds, validate schema/types/domains, quarantine failed records, and generate repair suggestions.",
+        "Self-healing data quality workflow that normalizes messy CSV feeds, validates schema/type/domain rules, quarantines failed rows, scores pipeline health, and generates repair suggestions.",
       tags: ["Python", "Pandas", "PostgreSQL", "FastAPI", "Streamlit", "Docker"],
       image: "",
       alt: "DataPulse self-healing pipeline platform",
@@ -144,7 +144,7 @@ window.PORTFOLIO_DATA = {
       title: "PaperGraph Research Intelligence Engine",
       category: "Applied AI / Knowledge Graph",
       description:
-        "Built a research intelligence engine with PostgreSQL, FastAPI, Streamlit, and Docker to extract methods, datasets, metrics, and graph relationships from AI/medical imaging papers, including my IEEE paper.",
+        "Research intelligence engine that indexes AI/medical imaging papers, extracts methods, datasets, and metrics, builds graph relationships, and compares papers through search and leaderboard APIs.",
       tags: ["Python", "PostgreSQL", "FastAPI", "Streamlit", "NLP", "Docker"],
       image: "",
       alt: "PaperGraph research intelligence engine",
@@ -156,7 +156,7 @@ window.PORTFOLIO_DATA = {
       title: "CleanCampus Urban Heat Island Dashboard",
       category: "IoT / Data Platform",
       description:
-        "Built a BU IoT monitoring platform with field sensors, Raspberry Pi gateway ingestion, Node.js REST APIs, PostgreSQL, Leaflet maps, alerts, trends, and CSV export for urban heat island research.",
+        "BU IoT monitoring platform connecting field sensors, Raspberry Pi gateway ingestion, Node.js REST APIs, PostgreSQL, Leaflet maps, alerts, trends, and CSV export for urban heat island research.",
       tags: ["Node.js", "PostgreSQL", "Leaflet", "IoT", "DigitalOcean"],
       image: "./assets/cleancampus/01-dashboard-real-capture.png",
       alt: "CleanCampus Urban Heat Island dashboard",
@@ -170,7 +170,7 @@ window.PORTFOLIO_DATA = {
       title: "Agentic LLM Web QA System",
       category: "Generative AI / Agents",
       description:
-        "Built a local LangGraph/Ollama QA workflow with researcher, evaluator, and writer agents that search the web, rank JSON evidence, and return sourced answers instead of raw model output.",
+        "Local LangGraph/Ollama QA workflow with researcher, evaluator, and writer agents that search the web, rank JSON evidence, and return sourced answers instead of raw model output.",
       tags: ["LangGraph", "Ollama", "LLMs", "Agents", "Web Search"],
       image: "",
       alt: "Agentic web QA system",
@@ -182,7 +182,7 @@ window.PORTFOLIO_DATA = {
       title: "Formula 1 Pit Stop Analytics DBMS",
       category: "Database / Analytics",
       description:
-        "Built a Formula 1 pit-stop analytics system with SQL Server, ETL staging, normalized OLTP tables, star-schema reporting, and ML models for slow pit-stop prediction.",
+        "Formula 1 pit-stop analytics warehouse with SQL Server, ETL staging, normalized OLTP tables, star-schema reporting, and ML features for slow pit-stop prediction.",
       tags: ["SQL Server", "ETL", "Star Schema", "ML", "DBMS"],
       image: "",
       alt: "Formula 1 database project",
@@ -194,7 +194,7 @@ window.PORTFOLIO_DATA = {
       title: "Bizzlink Full-Stack Networking App",
       category: "Full-Stack Application",
       description:
-        "Built a global entrepreneur networking app with Flutter, Node.js/Express, MySQL, Firebase image storage, authentication, profile search, and connection workflows.",
+        "Full-stack entrepreneur networking app with Flutter, Node.js/Express, MySQL, Firebase image storage, authentication, profile search, and connection workflows.",
       tags: ["Flutter", "Node.js", "Express", "MySQL", "Firebase"],
       image: "",
       alt: "Bizzlink app",
