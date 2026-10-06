@@ -3,7 +3,7 @@ window.PORTFOLIO_DATA = {
     name: "Mohammed Sufiyan",
     role: "Data Analytics • Data Engineering • Applied AI",
     summary:
-      "Data Engineer and MS Applied Data Analytics student at Boston University focused on ETL pipelines, SQL optimization, AWS, Docker, and practical data systems. I have IEEE-published research in Pix2Pix-GAN lung segmentation and ongoing work on LLMs in reinforcement learning. My projects include CleanCampus IoT monitoring, agentic LLM workflows, 3D avatar reconstruction, Formula 1 analytics, and full-stack app development.",
+      "Data Engineer and MS Applied Data Analytics student at Boston University focused on ETL pipelines, SQL optimization, streaming systems, Dockerized APIs, and practical applied AI. I have IEEE-published research in Pix2Pix-GAN lung segmentation and recent projects in fraud intelligence, self-healing pipelines, and research paper intelligence.",
     monogram: "MS",
     portrait: "https://github.com/suff28.png",
     stats: [
@@ -13,7 +13,7 @@ window.PORTFOLIO_DATA = {
     ]
   },
   about:
-    "Data Engineer and BU Applied Data Analytics graduate student focused on reliable pipelines, SQL optimization, cloud tooling, and useful analytics systems. I have IEEE-published research in Pix2Pix-GAN lung segmentation and ongoing LLM/RL research. Recent work includes CleanCampus IoT monitoring, StarRez housing systems, agentic LLM workflows, 3D avatar reconstruction, Formula 1 analytics, and full-stack app development.",
+    "Data Engineer and BU Applied Data Analytics graduate student focused on reliable pipelines, SQL optimization, cloud tooling, and useful analytics systems. I have IEEE-published research in Pix2Pix-GAN lung segmentation and ongoing LLM/RL research. Recent work includes CleanCampus IoT monitoring, StarRez housing systems, real-time fraud detection, self-healing data pipelines, research intelligence, and agentic LLM workflows.",
   skills: [
     "Python",
     "SQL",
@@ -27,6 +27,9 @@ window.PORTFOLIO_DATA = {
     "Tableau",
     "AWS S3/Lambda",
     "Docker",
+    "Kafka/Redpanda",
+    "FastAPI",
+    "Streamlit",
     "DigitalOcean",
     "REST APIs",
     "Machine Learning",
@@ -114,6 +117,42 @@ window.PORTFOLIO_DATA = {
   ],
   projects: [
     {
+      title: "FinGuard Real-Time Fraud Intelligence Platform",
+      category: "Streaming Data Platform",
+      description:
+        "Built a real-time fraud detection platform with Redpanda/Kafka, Python producer/consumer services, PostgreSQL, Redis, FastAPI, Streamlit, and Docker to process card transactions and surface high-risk alerts.",
+      tags: ["Python", "Redpanda/Kafka", "PostgreSQL", "Redis", "FastAPI", "Docker"],
+      image: "",
+      alt: "FinGuard fraud intelligence platform",
+      links: [
+        { label: "GitHub", href: "https://github.com/suff28/finguard-fraud-intelligence-platform" }
+      ]
+    },
+    {
+      title: "DataPulse AI Self-Healing Data Pipeline",
+      category: "Data Reliability Platform",
+      description:
+        "Built a data reliability platform with Pandas, PostgreSQL, FastAPI, Streamlit, and Docker to normalize messy CSV feeds, validate schema/types/domains, quarantine failed records, and generate repair suggestions.",
+      tags: ["Python", "Pandas", "PostgreSQL", "FastAPI", "Streamlit", "Docker"],
+      image: "",
+      alt: "DataPulse self-healing pipeline platform",
+      links: [
+        { label: "GitHub", href: "https://github.com/suff28/datapulse-ai-self-healing-pipeline" }
+      ]
+    },
+    {
+      title: "PaperGraph Research Intelligence Engine",
+      category: "Applied AI / Knowledge Graph",
+      description:
+        "Built a research intelligence engine with PostgreSQL, FastAPI, Streamlit, and Docker to extract methods, datasets, metrics, and graph relationships from AI/medical imaging papers, including my IEEE paper.",
+      tags: ["Python", "PostgreSQL", "FastAPI", "Streamlit", "NLP", "Docker"],
+      image: "",
+      alt: "PaperGraph research intelligence engine",
+      links: [
+        { label: "GitHub", href: "https://github.com/suff28/papergraph-research-intelligence-engine" }
+      ]
+    },
+    {
       title: "CleanCampus Urban Heat Island Dashboard",
       category: "IoT / Data Platform",
       description:
@@ -125,18 +164,6 @@ window.PORTFOLIO_DATA = {
         { label: "Case Study", href: "#cleancampus" },
         { label: "GitHub", href: "https://github.com/suff28/cleancampus-urban-heat-island" },
         { label: "Live Demo", href: "https://suff28.github.io/cleancampus-urban-heat-island/" }
-      ]
-    },
-    {
-      title: "3D Avatar Reconstruction Pipeline",
-      category: "Computer Vision / 3D Pipeline",
-      description:
-        "Reconstructed a personal 3D avatar from multi-angle references, exported optimized GLB assets, and integrated the result into a Unity/Blender runner prototype with C# movement, camera follow, and demo videos.",
-      tags: ["3D Reconstruction", "GLB", "Unity", "Blender", "C#"],
-      image: "",
-      alt: "3D avatar reconstruction project",
-      links: [
-        { label: "GitHub", href: "https://github.com/suff28/3D-avatar-reconstruction-pipeline" }
       ]
     },
     {
@@ -152,18 +179,6 @@ window.PORTFOLIO_DATA = {
       ]
     },
     {
-      title: "RL Biped Robot Simulation",
-      category: "Reinforcement Learning",
-      description:
-        "Designed a bird-legged biped in Blender, imported it into MuJoCo, and trained walking behavior with PPO-style reward design for balance, stride, and forward motion.",
-      tags: ["Python", "MuJoCo", "PPO", "Blender", "RL"],
-      image: "",
-      alt: "Rendered bird-legged biped robot",
-      links: [
-        { label: "GitHub", href: "https://github.com/suff28/bird-legged-biped-robot" }
-      ]
-    },
-    {
       title: "Formula 1 Pit Stop Analytics DBMS",
       category: "Database / Analytics",
       description:
@@ -173,18 +188,6 @@ window.PORTFOLIO_DATA = {
       alt: "Formula 1 database project",
       links: [
         { label: "GitHub", href: "https://github.com/suff28/formula1-pitstop-dbms" }
-      ]
-    },
-    {
-      title: "Spotify Popularity Analysis",
-      category: "Statistics / Data Analysis",
-      description:
-        "Analyzed 1,000 Spotify tracks in R using regression, t-tests, ANOVA, and ggplot visualizations to identify how audio features, genre, and explicit content relate to popularity.",
-      tags: ["R", "Regression", "ANOVA", "ggplot", "EDA"],
-      image: "",
-      alt: "Spotify popularity analysis",
-      links: [
-        { label: "GitHub", href: "https://github.com/suff28/spotify-popularity-analysis" }
       ]
     },
     {
