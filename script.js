@@ -67,9 +67,11 @@ function projectImage(project) {
     return `<img src="${escapeHtml(project.image)}" alt="${escapeHtml(project.alt || project.title)}">`;
   }
 
+  const label = project.art || project.title.split(" ").slice(0, 3).join(" ");
+
   return `
     <div class="project-art" aria-hidden="true">
-      <span>${escapeHtml(project.title.split(" ").slice(0, 3).join(" "))}</span>
+      <span>${escapeHtml(label)}</span>
     </div>
   `;
 }
@@ -124,7 +126,7 @@ function renderProjects() {
   projectGrid.innerHTML = data.projects
     .map(
       (project) => `
-        <article class="project-card reveal">
+        <article class="project-card reveal" style="--project-accent: ${escapeHtml(project.accent || "#6bf0d2")}">
           <div class="project-image">${projectImage(project)}</div>
           <div class="project-body">
             <p class="eyebrow">${escapeHtml(project.category)}</p>

@@ -120,9 +120,11 @@ window.PORTFOLIO_DATA = {
       title: "FinGuard Real-Time Fraud Intelligence Platform",
       category: "Streaming Data Platform",
       description:
-        "Real-time fraud detection system with Redpanda/Kafka, Python producer/consumer services, PostgreSQL, Redis, FastAPI, Streamlit, and Docker. Scores card transactions and surfaces high-risk alerts through API and dashboard layers.",
+        "Event-driven fraud scoring system that streams card transactions through Redpanda/Kafka, caches active alerts in Redis, stores audit history in PostgreSQL, and exposes investigator views through FastAPI and Streamlit.",
       tags: ["Python", "Redpanda/Kafka", "PostgreSQL", "Redis", "FastAPI", "Docker"],
       image: "",
+      art: "Fraud Stream",
+      accent: "#ff6b7a",
       alt: "FinGuard fraud intelligence platform",
       links: [
         { label: "GitHub", href: "https://github.com/suff28/finguard-fraud-intelligence-platform" }
@@ -132,9 +134,11 @@ window.PORTFOLIO_DATA = {
       title: "DataPulse AI Self-Healing Data Pipeline",
       category: "Data Reliability Platform",
       description:
-        "Self-healing data quality workflow that normalizes messy CSV feeds, validates schema/type/domain rules, quarantines failed rows, scores pipeline health, and generates repair suggestions.",
+        "Data quality recovery workflow that profiles messy CSV feeds, applies schema/type/domain checks with Pandas, writes clean and quarantined records to PostgreSQL, and surfaces repair actions through an API dashboard.",
       tags: ["Python", "Pandas", "PostgreSQL", "FastAPI", "Streamlit", "Docker"],
       image: "",
+      art: "Pipeline Health",
+      accent: "#6bf0d2",
       alt: "DataPulse self-healing pipeline platform",
       links: [
         { label: "GitHub", href: "https://github.com/suff28/datapulse-ai-self-healing-pipeline" }
@@ -144,9 +148,11 @@ window.PORTFOLIO_DATA = {
       title: "PaperGraph Research Intelligence Engine",
       category: "Applied AI / Knowledge Graph",
       description:
-        "Research intelligence engine that indexes AI/medical imaging papers, extracts methods, datasets, and metrics, builds graph relationships, and compares papers through search and leaderboard APIs.",
+        "Research intelligence engine that parses AI and medical-imaging papers, structures methods, datasets, and metrics, builds paper relationship edges, and supports search and leaderboard views around IEEE-style research work.",
       tags: ["Python", "PostgreSQL", "FastAPI", "Streamlit", "NLP", "Docker"],
       image: "",
+      art: "Research Graph",
+      accent: "#f4d35e",
       alt: "PaperGraph research intelligence engine",
       links: [
         { label: "GitHub", href: "https://github.com/suff28/papergraph-research-intelligence-engine" }
@@ -159,6 +165,7 @@ window.PORTFOLIO_DATA = {
         "BU IoT monitoring platform connecting field sensors, Raspberry Pi gateway ingestion, Node.js REST APIs, PostgreSQL, Leaflet maps, alerts, trends, and CSV export for urban heat island research.",
       tags: ["Node.js", "PostgreSQL", "Leaflet", "IoT", "DigitalOcean"],
       image: "./assets/cleancampus/01-dashboard-real-capture.png",
+      accent: "#7ee787",
       alt: "CleanCampus Urban Heat Island dashboard",
       links: [
         { label: "Case Study", href: "#cleancampus" },
@@ -173,6 +180,8 @@ window.PORTFOLIO_DATA = {
         "Local LangGraph/Ollama QA workflow with researcher, evaluator, and writer agents that search the web, rank JSON evidence, and return sourced answers instead of raw model output.",
       tags: ["LangGraph", "Ollama", "LLMs", "Agents", "Web Search"],
       image: "",
+      art: "Agent QA",
+      accent: "#83a8ff",
       alt: "Agentic web QA system",
       links: [
         { label: "GitHub", href: "https://github.com/suff28/multi-agent-web-qa-system" }
@@ -185,6 +194,8 @@ window.PORTFOLIO_DATA = {
         "Formula 1 pit-stop analytics warehouse with SQL Server, ETL staging, normalized OLTP tables, star-schema reporting, and ML features for slow pit-stop prediction.",
       tags: ["SQL Server", "ETL", "Star Schema", "ML", "DBMS"],
       image: "",
+      art: "Pit Stop DBMS",
+      accent: "#ffb86b",
       alt: "Formula 1 database project",
       links: [
         { label: "GitHub", href: "https://github.com/suff28/formula1-pitstop-dbms" }
@@ -197,9 +208,53 @@ window.PORTFOLIO_DATA = {
         "Full-stack entrepreneur networking app with Flutter, Node.js/Express, MySQL, Firebase image storage, authentication, profile search, and connection workflows.",
       tags: ["Flutter", "Node.js", "Express", "MySQL", "Firebase"],
       image: "",
+      art: "Bizzlink",
+      accent: "#58a6ff",
       alt: "Bizzlink app",
       links: [
         { label: "GitHub", href: "https://github.com/suff28/Bizzlink-with-backend" }
+      ]
+    },
+    {
+      title: "3D Avatar Reconstruction Pipeline",
+      category: "3D / Computer Vision",
+      description:
+        "Reconstructed a personal 3D avatar from multi-angle references, exported optimized GLB assets, and integrated them into a Unity/Blender runner prototype with C# movement, camera follow, and demo videos.",
+      tags: ["Blender", "Unity", "C#", "GLB", "Computer Vision"],
+      image: "",
+      art: "3D Avatar",
+      accent: "#c084fc",
+      alt: "3D Avatar Reconstruction Pipeline",
+      links: [
+        { label: "GitHub", href: "https://github.com/suff28/3D-avatar-reconstruction-pipeline" }
+      ]
+    },
+    {
+      title: "RL Biped Robot Simulation",
+      category: "Reinforcement Learning / Simulation",
+      description:
+        "Designed a bird-legged biped in Blender, imported it into MuJoCo, and trained walking behavior with PPO-style reward design for balance, stride, and forward motion.",
+      tags: ["Python", "MuJoCo", "PPO", "Blender", "Reinforcement Learning"],
+      image: "",
+      art: "RL Biped",
+      accent: "#6ea8fe",
+      alt: "RL Biped Robot Simulation",
+      links: [
+        { label: "GitHub", href: "https://github.com/suff28/bird-legged-biped-robot" }
+      ]
+    },
+    {
+      title: "Spotify Popularity Analysis",
+      category: "Statistical Analysis / R",
+      description:
+        "Analyzed 1,000 Spotify tracks in R with regression, t-tests, ANOVA, and ggplot visualizations to study how audio features, genre, and explicit content relate to popularity.",
+      tags: ["R", "Regression", "ANOVA", "ggplot", "Statistics"],
+      image: "",
+      art: "Spotify Stats",
+      accent: "#1db954",
+      alt: "Spotify Popularity Analysis",
+      links: [
+        { label: "GitHub", href: "https://github.com/suff28/spotify-popularity-analysis" }
       ]
     }
   ],
