@@ -117,6 +117,20 @@ window.PORTFOLIO_DATA = {
   ],
   projects: [
     {
+      title: "Retail Warehouse Quality Platform",
+      category: "Data Engineering / Warehouse Quality",
+      description:
+        "Built a synthetic retail data platform with Python ingestion, Parquet delivery, PostgreSQL extraction, an AWS S3 sample upload, and Snowflake/dbt warehouse validation. Validated 65.4M generated records locally; the 65,443-row Snowflake sample passed 46/46 dbt nodes, 59/59 independent SQL checks, and exact reconciliation across seven tables. AWS Academy blocked the IAM role needed for direct S3-to-Snowflake access, so the cloud sample used Snowflake's internal stage.",
+      tags: ["Python", "SQL", "dbt", "Snowflake", "AWS S3", "Parquet", "Data Quality"],
+      image: "./assets/warehouse-quality/snowflake-raw-row-counts.png",
+      accent: "#58a6ff",
+      alt: "Snowflake results showing all seven retail raw-table row counts passed",
+      links: [
+        { label: "GitHub Project", href: "https://github.com/suff28/warehouse-quality-platform" },
+        { label: "Execution Report", href: "https://github.com/suff28/warehouse-quality-platform/blob/main/docs/EXECUTION_REPORT.md" }
+      ]
+    },
+    {
       title: "FinGuard Real-Time Fraud Intelligence Platform",
       category: "Streaming Data Platform",
       description:
