@@ -117,7 +117,7 @@ window.PORTFOLIO_DATA = {
   ],
   projects: [
     {
-      title: "Retail Warehouse Quality Platform",
+      title: "Brazilian E-Commerce Data Quality & ETL Validation Framework",
       category: "Data Engineering / Warehouse Quality",
       description:
         "Built a retail analytics warehouse with Python, Parquet, AWS S3, Snowflake, and dbt. Uploaded seven Parquet datasets to S3 and loaded a 65,443-row validation sample into Snowflake for dbt modeling and quality checks. Generated 65.4M synthetic records locally; all 46 dbt nodes, 59 SQL quality checks, and seven table reconciliations passed.",
