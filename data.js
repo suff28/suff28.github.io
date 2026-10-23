@@ -131,7 +131,7 @@ window.PORTFOLIO_DATA = {
       ]
     },
     {
-      title: "FinGuard Real-Time Fraud Intelligence Platform",
+      title: "Card Fraud Detection and Alerting Platform",
       category: "Streaming Data Platform",
       description:
         "Event-driven fraud scoring system that streams card transactions through Redpanda/Kafka, caches active alerts in Redis, stores audit history in PostgreSQL, and exposes investigator views through FastAPI and Streamlit.",
@@ -145,7 +145,7 @@ window.PORTFOLIO_DATA = {
       ]
     },
     {
-      title: "DataPulse AI Self-Healing Data Pipeline",
+      title: "Pipeline Health Monitor",
       category: "Data Reliability Platform",
       description:
         "Data quality recovery workflow that profiles messy CSV feeds, applies schema/type/domain checks with Pandas, writes clean and quarantined records to PostgreSQL, and surfaces repair actions through an API dashboard.",
@@ -159,7 +159,7 @@ window.PORTFOLIO_DATA = {
       ]
     },
     {
-      title: "PaperGraph Research Intelligence Engine",
+      title: "Research Evidence Explorer",
       category: "Applied AI / Knowledge Graph",
       description:
         "Research intelligence engine that parses AI and medical-imaging papers, structures methods, datasets, and metrics, builds paper relationship edges, and supports search and leaderboard views around IEEE-style research work.",
@@ -188,7 +188,7 @@ window.PORTFOLIO_DATA = {
       ]
     },
     {
-      title: "Agentic LLM Web QA System",
+      title: "Multi Agent Web Research Assistant",
       category: "Generative AI / Agents",
       description:
         "Local LangGraph/Ollama QA workflow with researcher, evaluator, and writer agents that search the web, rank JSON evidence, and return sourced answers instead of raw model output.",
@@ -202,7 +202,7 @@ window.PORTFOLIO_DATA = {
       ]
     },
     {
-      title: "Formula 1 Pit Stop Analytics DBMS",
+      title: "Formula 1 Pit Stop Analysis and Prediction",
       category: "Database / Analytics",
       description:
         "Formula 1 pit-stop analytics warehouse with SQL Server, ETL staging, normalized OLTP tables, star-schema reporting, and ML features for slow pit-stop prediction.",
