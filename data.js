@@ -117,18 +117,21 @@ window.PORTFOLIO_DATA = {
   ],
   projects: [
     {
-      title: "Brazilian E-Commerce Data Quality & ETL Validation Framework",
+      title: "Data Quality and ETL Validation Framework",
+      meta: "Oct 2026",
       category: "Data Engineering / Warehouse Quality",
       description:
-        "Built a retail analytics warehouse with Python, Parquet, AWS S3, Snowflake, and dbt. Uploaded seven Parquet datasets to S3 and loaded a 65,443-row validation sample into Snowflake for dbt modeling and quality checks. Generated 65.4M synthetic records locally; all 46 dbt nodes, 59 SQL quality checks, and seven table reconciliations passed.",
+        "Built a synthetic Brazilian ecommerce data quality pipeline with PostgreSQL extraction, Parquet delivery, a private AWS S3 sample upload, Snowflake internal-stage loading, and dbt transformations. Generated 65.4M synthetic records locally; loaded a 65,443-row sample into Snowflake. All 46 dbt nodes, 97 Python regression tests, 59 SQL quality checks, and seven table reconciliations passed.",
       tags: ["Python", "SQL", "dbt", "Snowflake", "AWS S3", "Parquet", "Data Quality"],
       image: "./assets/warehouse-quality/snowflake-raw-row-counts.png",
       featured: true,
       metrics: [
         { value: "65.4M", label: "Synthetic records generated locally" },
-        { value: "65,443", label: "Rows validated in Snowflake" },
+        { value: "65,443", label: "Rows loaded to Snowflake sample" },
         { value: "46 / 46", label: "dbt nodes passed" },
-        { value: "59 / 59", label: "SQL quality checks passed" }
+        { value: "97", label: "Python regression tests passed" },
+        { value: "59 / 59", label: "SQL quality checks passed" },
+        { value: "7 / 7", label: "Table reconciliations passed" }
       ],
       accent: "#58a6ff",
       alt: "Snowflake results showing all seven retail raw-table row counts passed",
@@ -140,6 +143,7 @@ window.PORTFOLIO_DATA = {
     {
       title: "Card Fraud Detection and Alerting Platform",
       category: "Streaming Data Platform",
+      meta: "Aug 2026",
       description:
         "Event-driven fraud scoring system that streams card transactions through Redpanda/Kafka, caches active alerts in Redis, stores audit history in PostgreSQL, and exposes investigator views through FastAPI and Streamlit.",
       tags: ["Python", "Redpanda/Kafka", "PostgreSQL", "Redis", "FastAPI", "Docker"],
@@ -152,7 +156,23 @@ window.PORTFOLIO_DATA = {
       ]
     },
     {
+      title: "Formula 1 Pit Stop Analysis and Prediction",
+      meta: "Feb 2026",
+      category: "Database / Analytics",
+      description:
+        "Formula 1 pit-stop analytics warehouse with SQL Server, ETL staging, normalized OLTP tables, star-schema reporting, and ML features for slow pit-stop prediction.",
+      tags: ["SQL Server", "ETL", "Star Schema", "ML", "DBMS"],
+      image: "",
+      art: "Pit Stop DBMS",
+      accent: "#ffb86b",
+      alt: "Formula 1 database project",
+      links: [
+        { label: "GitHub", href: "https://github.com/suff28/formula1-pitstop-dbms" }
+      ]
+    },
+    {
       title: "Pipeline Health Monitor",
+      meta: "Sep 2026",
       category: "Data Reliability Platform",
       description:
         "Data quality recovery workflow that profiles messy CSV feeds, applies schema/type/domain checks with Pandas, writes clean and quarantined records to PostgreSQL, and surfaces repair actions through an API dashboard.",
@@ -163,20 +183,6 @@ window.PORTFOLIO_DATA = {
       alt: "DataPulse self-healing pipeline platform",
       links: [
         { label: "GitHub", href: "https://github.com/suff28/datapulse-ai-self-healing-pipeline" }
-      ]
-    },
-    {
-      title: "Research Evidence Explorer",
-      category: "Applied AI / Knowledge Graph",
-      description:
-        "Research intelligence engine that parses AI and medical-imaging papers, structures methods, datasets, and metrics, builds paper relationship edges, and supports search and leaderboard views around IEEE-style research work.",
-      tags: ["Python", "PostgreSQL", "FastAPI", "Streamlit", "NLP", "Docker"],
-      image: "",
-      art: "Research Graph",
-      accent: "#f4d35e",
-      alt: "PaperGraph research intelligence engine",
-      links: [
-        { label: "GitHub", href: "https://github.com/suff28/papergraph-research-intelligence-engine" }
       ]
     },
     {
@@ -192,34 +198,6 @@ window.PORTFOLIO_DATA = {
         { label: "Case Study", href: "#cleancampus" },
         { label: "GitHub", href: "https://github.com/suff28/cleancampus-urban-heat-island" },
         { label: "Live Demo", href: "https://suff28.github.io/cleancampus-urban-heat-island/" }
-      ]
-    },
-    {
-      title: "Multi Agent Web Research Assistant",
-      category: "Generative AI / Agents",
-      description:
-        "Local LangGraph/Ollama QA workflow with researcher, evaluator, and writer agents that search the web, rank JSON evidence, and return sourced answers instead of raw model output.",
-      tags: ["LangGraph", "Ollama", "LLMs", "Agents", "Web Search"],
-      image: "",
-      art: "Agent QA",
-      accent: "#83a8ff",
-      alt: "Agentic web QA system",
-      links: [
-        { label: "GitHub", href: "https://github.com/suff28/multi-agent-web-qa-system" }
-      ]
-    },
-    {
-      title: "Formula 1 Pit Stop Analysis and Prediction",
-      category: "Database / Analytics",
-      description:
-        "Formula 1 pit-stop analytics warehouse with SQL Server, ETL staging, normalized OLTP tables, star-schema reporting, and ML features for slow pit-stop prediction.",
-      tags: ["SQL Server", "ETL", "Star Schema", "ML", "DBMS"],
-      image: "",
-      art: "Pit Stop DBMS",
-      accent: "#ffb86b",
-      alt: "Formula 1 database project",
-      links: [
-        { label: "GitHub", href: "https://github.com/suff28/formula1-pitstop-dbms" }
       ]
     },
     {

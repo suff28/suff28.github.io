@@ -131,6 +131,7 @@ function renderProjects() {
           <div class="project-body">
             <p class="eyebrow">${escapeHtml(project.category)}</p>
             <h3>${escapeHtml(project.title)}</h3>
+            ${project.meta ? `<p class="case-meta project-meta">${escapeHtml(project.meta)}</p>` : ""}
             <p>${escapeHtml(project.description)}</p>
             ${project.metrics?.length ? `
               <div class="project-metrics" aria-label="Project results">
