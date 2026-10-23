@@ -121,7 +121,7 @@ window.PORTFOLIO_DATA = {
       meta: "Oct 2026",
       category: "Data Engineering / Warehouse Quality",
       description:
-        "Built a synthetic Brazilian ecommerce data quality pipeline with PostgreSQL extraction, Parquet delivery, a private AWS S3 sample upload, Snowflake internal-stage loading, and dbt transformations. Generated 65.4M synthetic records locally; loaded a 65,443-row sample into Snowflake. All 46 dbt nodes, 97 Python regression tests, 59 SQL quality checks, and seven table reconciliations passed.",
+        "Built a synthetic Brazilian ecommerce data quality pipeline with PostgreSQL extraction, Parquet delivery, a private AWS S3 sample upload, Snowflake internal-stage loading, and dbt transformations. Generated 65.4M synthetic records locally; loaded a 65,443-row sample into Snowflake. All 46 dbt nodes, 97 Python regression tests, 59 SQL quality checks, and seven source-to-target table reconciliations passed.",
       tags: ["Python", "SQL", "dbt", "Snowflake", "AWS S3", "Parquet", "Data Quality"],
       image: "./assets/warehouse-quality/snowflake-raw-row-counts.png",
       featured: true,
