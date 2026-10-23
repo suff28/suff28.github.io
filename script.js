@@ -126,12 +126,22 @@ function renderProjects() {
   projectGrid.innerHTML = data.projects
     .map(
       (project) => `
-        <article class="project-card reveal" style="--project-accent: ${escapeHtml(project.accent || "#6bf0d2")}">
+        <article class="project-card${project.featured ? " project-card-featured" : ""} reveal" style="--project-accent: ${escapeHtml(project.accent || "#6bf0d2")}">
           <div class="project-image">${projectImage(project)}</div>
           <div class="project-body">
             <p class="eyebrow">${escapeHtml(project.category)}</p>
             <h3>${escapeHtml(project.title)}</h3>
             <p>${escapeHtml(project.description)}</p>
+            ${project.metrics?.length ? `
+              <div class="project-metrics" aria-label="Project results">
+                ${project.metrics.map((metric) => `
+                  <div class="project-metric">
+                    <strong>${escapeHtml(metric.value)}</strong>
+                    <span>${escapeHtml(metric.label)}</span>
+                  </div>
+                `).join("")}
+              </div>
+            ` : ""}
             <div class="tag-row">
               ${project.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}
             </div>

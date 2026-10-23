@@ -120,9 +120,16 @@ window.PORTFOLIO_DATA = {
       title: "Retail Warehouse Quality Platform",
       category: "Data Engineering / Warehouse Quality",
       description:
-        "Built a synthetic retail data platform with Python ingestion, Parquet delivery, PostgreSQL extraction, an AWS S3 sample upload, and Snowflake/dbt warehouse validation. Validated 65.4M generated records locally; the 65,443-row Snowflake sample passed 46/46 dbt nodes, 59/59 independent SQL checks, and exact reconciliation across seven tables. AWS Academy blocked the IAM role needed for direct S3-to-Snowflake access, so the cloud sample used Snowflake's internal stage.",
+        "Built a retail analytics warehouse with Python, Parquet, AWS S3, Snowflake, and dbt. Uploaded seven Parquet datasets to S3 and loaded a 65,443-row validation sample into Snowflake for dbt modeling and quality checks. Generated 65.4M synthetic records locally; all 46 dbt nodes, 59 SQL quality checks, and seven table reconciliations passed.",
       tags: ["Python", "SQL", "dbt", "Snowflake", "AWS S3", "Parquet", "Data Quality"],
       image: "./assets/warehouse-quality/snowflake-raw-row-counts.png",
+      featured: true,
+      metrics: [
+        { value: "65.4M", label: "Synthetic records generated locally" },
+        { value: "65,443", label: "Rows validated in Snowflake" },
+        { value: "46 / 46", label: "dbt nodes passed" },
+        { value: "59 / 59", label: "SQL quality checks passed" }
+      ],
       accent: "#58a6ff",
       alt: "Snowflake results showing all seven retail raw-table row counts passed",
       links: [
