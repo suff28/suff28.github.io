@@ -16,43 +16,21 @@ const cleancampusCase = document.getElementById("cleancampus-case");
 const cleancampusLinks = document.getElementById("cleancampus-links");
 
 const roles = [
-  {
-    label: "Data Engineer",
-    copy:
-      "Data Engineer and BU Applied Data Analytics graduate student focused on ETL pipelines, SQL optimization, AWS, Docker, and practical data systems. I also build applied AI projects, from CleanCampus IoT monitoring to agentic LLM workflows and 3D avatar reconstruction.",
-  },
-  {
-    label: "ML Engineer & Researcher",
-    copy:
-      "I work on applied ML across medical imaging, reinforcement learning, agentic LLMs, and analytics systems.",
-  },
-  {
-    label: "Data Scientist",
-    copy:
-      "I use Python, R, SQL, statistics, and machine learning to test ideas and turn analysis into decisions.",
-  },
-  {
-    label: "AI Systems Builder",
-    copy:
-      "I take ideas past the notebook stage: local agents, Unity prototypes, IoT dashboards, and production-style workflows.",
-  },
+  { label: "Data Engineer", copy: data.hero.summary },
 ];
-
 const timelineItems = [
-  { label: "B.Tech at Presidency University", kind: "education", x: 9.5, w: 55, y: 150 },
-  { label: "Bizzlink full-stack app", kind: "project", x: 57, w: 10, y: 430 },
-  { label: "Data Engineer at Power Tech", kind: "job", x: 63, w: 13, y: 220 },
-  { label: "IEEE lung segmentation paper", kind: "research", x: 67, w: 8, y: 285 },
-  { label: "MS Applied Data Analytics at BU", kind: "education", x: 81, w: 17, y: 150 },
-  { label: "Formula 1 pit-stop DBMS", kind: "project", x: 84, w: 10, y: 350 },
-  { label: "Spotify analysis in R", kind: "project", x: 84, w: 10, y: 412 },
-  { label: "BU Housing StarRez systems", kind: "job", x: 90, w: 8, y: 220 },
-  { label: "CleanCampus IoT dashboard", kind: "job", x: 86, w: 9, y: 285 },
-  { label: "RL biped robot simulation", kind: "project", x: 89, w: 9, y: 474 },
-  { label: "Agentic LLM web QA", kind: "project", x: 89, w: 8, y: 350 },
-  { label: "3D avatar reconstruction", kind: "project", x: 89, w: 9, y: 536 },
+  { label: "B.Tech, Presidency University", kind: "education", x: 8, w: 48, y: 150 },
+  { label: "Data Engineer, Power Tech", kind: "job", x: 58, w: 13, y: 220 },
+  { label: "IEEE lung segmentation paper", kind: "research", x: 59, w: 10, y: 285 },
+  { label: "MS Applied Data Analytics, BU", kind: "education", x: 72, w: 24, y: 150 },
+  { label: "F1 pit stop analysis", kind: "project", x: 73, w: 8, y: 350 },
+  { label: "LLMs in reinforcement learning", kind: "research", x: 73, w: 19, y: 412 },
+  { label: "CleanCampus research", kind: "job", x: 85, w: 8, y: 285 },
+  { label: "Pipeline Health Monitor", kind: "project", x: 86, w: 8, y: 350 },
+  { label: "Card fraud platform", kind: "project", x: 89, w: 8, y: 474 },
+  { label: "Graduate Teaching Assistant", kind: "job", x: 91, w: 8, y: 220 },
+  { label: "Warehouse quality framework", kind: "project", x: 95, w: 5, y: 536 },
 ];
-
 function escapeHtml(value) {
   return String(value ?? "")
     .replaceAll("&", "&amp;")
@@ -120,6 +98,15 @@ function setRole(index) {
     button.classList.toggle("is-active", isActive);
     button.lastElementChild.textContent = isActive ? "✓" : "";
   });
+}
+
+function renderSkills() {
+  const skillsGrid = document.getElementById("skills-grid");
+  if (!skillsGrid) return;
+  skillsGrid.innerHTML = data.skills.map((group) => {
+    const items = group.items.map((item) => `<span>${escapeHtml(item)}</span>`).join("");
+    return `<article class="skill-group reveal"><h3>${escapeHtml(group.category)}</h3><div class="tag-row">${items}</div></article>`;
+  }).join("");
 }
 
 function renderProjects() {
@@ -343,6 +330,7 @@ function setRevealMotion() {
 renderRoles();
 setRole(0);
 renderProjects();
+renderSkills();
 renderCleanCampusCase();
 renderResearch();
 renderTimeline();

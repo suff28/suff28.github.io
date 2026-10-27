@@ -1,432 +1,477 @@
 window.PORTFOLIO_DATA = {
-  hero: {
-    name: "Mohammed Sufiyan",
-    role: "Data Analytics • Data Engineering • Applied AI",
-    summary:
-      "Data Engineer and MS Applied Data Analytics student at Boston University focused on ETL pipelines, SQL optimization, streaming systems, Dockerized APIs, and practical applied AI. I have IEEE-published research in Pix2Pix-GAN lung segmentation and recent projects in fraud intelligence, self-healing pipelines, and research paper intelligence.",
-    monogram: "MS",
-    portrait: "https://github.com/suff28.png",
-    stats: [
-      { value: "3.9", label: "BU graduate GPA" },
-      { value: "10GB+", label: "daily ETL data handled" },
-      { value: "IEEE", label: "published research" }
-    ]
-  },
-  about:
-    "Data Engineer and BU Applied Data Analytics graduate student focused on reliable pipelines, SQL optimization, cloud tooling, and useful analytics systems. I have IEEE-published research in Pix2Pix-GAN lung segmentation and ongoing LLM/RL research. Recent work includes CleanCampus IoT monitoring, StarRez housing systems, real-time fraud detection, self-healing data pipelines, research intelligence, and agentic LLM workflows.",
-  skills: [
-    "Python",
-    "SQL",
-    "R",
-    "JavaScript",
-    "Node.js",
-    "PostgreSQL",
-    "SQL Server",
-    "MySQL",
-    "Power BI",
-    "Tableau",
-    "AWS S3/Lambda",
-    "Docker",
-    "Kafka/Redpanda",
-    "FastAPI",
-    "Streamlit",
-    "DigitalOcean",
-    "REST APIs",
-    "Machine Learning",
-    "Scikit-learn",
-    "PPO",
-    "LLMs",
-    "LangGraph",
-    "MuJoCo",
-    "Leaflet",
-    "StarRez"
-  ],
-  experience: [
-    {
-      title: "Research Assistant - Urban Heat Island / CleanCampus Project",
-      org: "Boston University",
-      meta: "Jan 2026 - Aug 2026 • Boston, MA",
-      description:
-        "Built the CleanCampus IoT monitoring dashboard with Node.js REST APIs, PostgreSQL, PM2/nginx, DigitalOcean, and Leaflet to ingest live sensor readings and visualize BU campus heat patterns.",
-      highlights: [
-        "Modeled 5 PostgreSQL tables for sensors, gateways, zones, readings, and alerts.",
-        "Added filters, trend charts, alert views, and CSV export for field monitoring.",
-        "Presented BU Urban Heat Island research at ACSP 2026 in Pittsburgh, Pennsylvania."
-      ],
-      links: [
-        { label: "Portfolio Case Study", href: "#cleancampus" },
-        { label: "GitHub", href: "https://github.com/suff28/cleancampus-urban-heat-island" },
-        { label: "Live Demo", href: "https://suff28.github.io/cleancampus-urban-heat-island/" }
-      ]
-    },
-    {
-      title: "Summer/Fall Operations Assistant - StarRez / Housing Systems",
-      org: "Boston University Housing",
-      meta: "May 2026 - Present • Boston, MA",
-      description:
-        "Supported full-time summer and fall BU Housing operations while improving how dorm room records, furniture updates, assignments, and resident/staff workflows were tracked in StarRez.",
-      highlights: [
-        "Built a DBMS-backed StarRez pipeline for room/bed records, summer assignments, check-in/out updates, and staff task tracking.",
-        "Maintained accurate StarRez records and room readiness updates across BU dorm operations."
-      ]
-    },
-    {
-      title: "Data Engineer",
-      org: "Power Tech",
-      meta: "Jun 2024 - May 2025 • Bengaluru, India",
-      description:
-        "Worked on data cleaning, SQL optimization, reporting, containerized deployments, and event-driven ETL pipelines for internal business operations.",
-      highlights: [
-        "Reduced processing time by 40% by automating 15+ Python data cleaning and transformation workflows.",
-        "Improved reporting performance by 30% by optimizing 20+ SQL queries and building 5 Power BI dashboards.",
-        "Processed 10GB+ daily using AWS S3/Lambda ETL pipelines and reduced Docker deployment time from 2 hours to under 30 minutes."
-      ]
-    }
-  ],
-  research: [
-    {
-      title: "Pix2Pix-GAN-Based Lung Segmentation for Chest X-Rays",
-      org: "IEEE Publication",
-      meta: "Sep 2024 - Apr 2025",
-      description:
-        "Built a Pix2Pix-GAN lung segmentation workflow for chest X-rays to improve medical image preprocessing and support early disease detection workflows.",
-      abstract:
-        "This work applies a Pix2Pix-GAN image-to-image learning approach to lung segmentation in chest X-rays. The goal was to create cleaner lung masks that can support downstream screening workflows for conditions such as tuberculosis, asthma, and pneumonia, especially where manual segmentation is slow or inconsistent.",
-      highlights: [
-        "Focused on robust lung-region segmentation for CXR images.",
-        "Authored an IEEE-published paper based on the project."
-      ],
-      links: [
-        { label: "IEEE", href: "https://ieeexplore.ieee.org/document/10939550/" },
-        { label: "Google Scholar", href: "https://scholar.google.com/citations?user=XSDrhfMAAAAJ&hl=en" }
-      ]
-    },
-    {
-      title: "LLMs in Reinforcement Learning: Comparative Analysis",
-      org: "Research with Machine Learning Professor",
-      meta: "Nov 2025 - Present",
-      description:
-        "Comparing how LLM-guided policy shaping and reward design can influence PPO-based reinforcement learning workflows.",
-      abstract:
-        "This ongoing research studies how large language models can assist reinforcement learning by shaping rewards, influencing policy exploration, and explaining training behavior. The current work compares PPO-based experiments to understand where LLM guidance helps and where it adds noise.",
-      highlights: [
-        "Explores LLM support for policy influence, reward shaping, and training interpretation.",
-        "Manuscript currently in progress."
-      ]
-    }
-  ],
-  projects: [
-    {
-      title: "Data Quality and ETL Validation Framework",
-      meta: "Oct 2026",
-      category: "Data Engineering / Warehouse Quality",
-      description:
-        "Built a synthetic Brazilian ecommerce data quality pipeline with PostgreSQL extraction, Parquet delivery, a private AWS S3 sample upload, Snowflake internal-stage loading, and dbt transformations. Generated 65.4M synthetic records locally; loaded a 65,443-row sample into Snowflake. All 46 dbt nodes, 97 Python regression tests, 59 SQL quality checks, and seven source-to-target table reconciliations passed.",
-      tags: ["Python", "SQL", "dbt", "Snowflake", "AWS S3", "Parquet", "Data Quality"],
-      image: "./assets/warehouse-quality/snowflake-raw-row-counts.png",
-      featured: true,
-      metrics: [
-        { value: "65.4M", label: "Synthetic records generated locally" },
-        { value: "65,443", label: "Rows loaded to Snowflake sample" },
-        { value: "46 / 46", label: "dbt nodes passed" },
-        { value: "97", label: "Python regression tests passed" },
-        { value: "59 / 59", label: "SQL quality checks passed" },
-        { value: "7 / 7", label: "Table reconciliations passed" }
-      ],
-      accent: "#58a6ff",
-      alt: "Snowflake results showing all seven retail raw-table row counts passed",
-      links: [
-        { label: "GitHub Project", href: "https://github.com/suff28/warehouse-quality-platform" },
-        { label: "Execution Report", href: "https://github.com/suff28/warehouse-quality-platform/blob/main/docs/EXECUTION_REPORT.md" }
-      ]
-    },
-    {
-      title: "Card Fraud Detection and Alerting Platform",
-      category: "Streaming Data Platform",
-      meta: "Aug 2026",
-      description:
-        "Event-driven fraud scoring system that streams card transactions through Redpanda/Kafka, caches active alerts in Redis, stores audit history in PostgreSQL, and exposes investigator views through FastAPI and Streamlit.",
-      tags: ["Python", "Redpanda/Kafka", "PostgreSQL", "Redis", "FastAPI", "Docker"],
-      image: "",
-      art: "Fraud Stream",
-      accent: "#ff6b7a",
-      alt: "FinGuard fraud intelligence platform",
-      links: [
-        { label: "GitHub", href: "https://github.com/suff28/finguard-fraud-intelligence-platform" }
-      ]
-    },
-    {
-      title: "Formula 1 Pit Stop Analysis and Prediction",
-      meta: "Feb 2026",
-      category: "Database / Analytics",
-      description:
-        "Formula 1 pit-stop analytics warehouse with SQL Server, ETL staging, normalized OLTP tables, star-schema reporting, and ML features for slow pit-stop prediction.",
-      tags: ["SQL Server", "ETL", "Star Schema", "ML", "DBMS"],
-      image: "",
-      art: "Pit Stop DBMS",
-      accent: "#ffb86b",
-      alt: "Formula 1 database project",
-      links: [
-        { label: "GitHub", href: "https://github.com/suff28/formula1-pitstop-dbms" }
-      ]
-    },
-    {
-      title: "Pipeline Health Monitor",
-      meta: "Sep 2026",
-      category: "Data Reliability Platform",
-      description:
-        "Data quality recovery workflow that profiles messy CSV feeds, applies schema/type/domain checks with Pandas, writes clean and quarantined records to PostgreSQL, and surfaces repair actions through an API dashboard.",
-      tags: ["Python", "Pandas", "PostgreSQL", "FastAPI", "Streamlit", "Docker"],
-      image: "",
-      art: "Pipeline Health",
-      accent: "#6bf0d2",
-      alt: "DataPulse self-healing pipeline platform",
-      links: [
-        { label: "GitHub", href: "https://github.com/suff28/datapulse-ai-self-healing-pipeline" }
-      ]
-    },
-    {
-      title: "CleanCampus Urban Heat Island Dashboard",
-      category: "IoT / Data Platform",
-      description:
-        "BU IoT monitoring platform connecting field sensors, Raspberry Pi gateway ingestion, Node.js REST APIs, PostgreSQL, Leaflet maps, alerts, trends, and CSV export for urban heat island research.",
-      tags: ["Node.js", "PostgreSQL", "Leaflet", "IoT", "DigitalOcean"],
-      image: "./assets/cleancampus/01-dashboard-real-capture.png",
-      accent: "#7ee787",
-      alt: "CleanCampus Urban Heat Island dashboard",
-      links: [
-        { label: "Case Study", href: "#cleancampus" },
-        { label: "GitHub", href: "https://github.com/suff28/cleancampus-urban-heat-island" },
-        { label: "Live Demo", href: "https://suff28.github.io/cleancampus-urban-heat-island/" }
-      ]
-    },
-    {
-      title: "Bizzlink Full-Stack Networking App",
-      category: "Full-Stack Application",
-      description:
-        "Full-stack entrepreneur networking app with Flutter, Node.js/Express, MySQL, Firebase image storage, authentication, profile search, and connection workflows.",
-      tags: ["Flutter", "Node.js", "Express", "MySQL", "Firebase"],
-      image: "",
-      art: "Bizzlink",
-      accent: "#58a6ff",
-      alt: "Bizzlink app",
-      links: [
-        { label: "GitHub", href: "https://github.com/suff28/Bizzlink-with-backend" }
-      ]
-    },
-    {
-      title: "3D Avatar Reconstruction Pipeline",
-      category: "3D / Computer Vision",
-      description:
-        "Reconstructed a personal 3D avatar from multi-angle references, exported optimized GLB assets, and integrated them into a Unity/Blender runner prototype with C# movement, camera follow, and demo videos.",
-      tags: ["Blender", "Unity", "C#", "GLB", "Computer Vision"],
-      image: "",
-      art: "3D Avatar",
-      accent: "#c084fc",
-      alt: "3D Avatar Reconstruction Pipeline",
-      links: [
-        { label: "GitHub", href: "https://github.com/suff28/3D-avatar-reconstruction-pipeline" }
-      ]
-    },
-    {
-      title: "RL Biped Robot Simulation",
-      category: "Reinforcement Learning / Simulation",
-      description:
-        "Designed a bird-legged biped in Blender, imported it into MuJoCo, and trained walking behavior with PPO-style reward design for balance, stride, and forward motion.",
-      tags: ["Python", "MuJoCo", "PPO", "Blender", "Reinforcement Learning"],
-      image: "",
-      art: "RL Biped",
-      accent: "#6ea8fe",
-      alt: "RL Biped Robot Simulation",
-      links: [
-        { label: "GitHub", href: "https://github.com/suff28/bird-legged-biped-robot" }
-      ]
-    },
-    {
-      title: "Spotify Popularity Analysis",
-      category: "Statistical Analysis / R",
-      description:
-        "Analyzed 1,000 Spotify tracks in R with regression, t-tests, ANOVA, and ggplot visualizations to study how audio features, genre, and explicit content relate to popularity.",
-      tags: ["R", "Regression", "ANOVA", "ggplot", "Statistics"],
-      image: "",
-      art: "Spotify Stats",
-      accent: "#1db954",
-      alt: "Spotify Popularity Analysis",
-      links: [
-        { label: "GitHub", href: "https://github.com/suff28/spotify-popularity-analysis" }
-      ]
-    }
-  ],
-  cleancampus: {
-    title: "CleanCampus Urban Heat Island IoT Platform",
-    subtitle:
-      "A BU Research Assistant project connecting environmental field sensors, gateway data ingestion, PostgreSQL storage, and a live web dashboard for campus-scale heat monitoring.",
-    role: "Graduate Research Assistant",
-    meta: "Boston University • Jan 2026 - Aug 2026",
-    stack: ["Node.js", "PostgreSQL", "REST APIs", "Leaflet", "PM2", "nginx", "DigitalOcean", "CSV Export"],
-    links: [
-      { label: "GitHub", href: "https://github.com/suff28/cleancampus-urban-heat-island" },
-      { label: "Live Demo", href: "https://suff28.github.io/cleancampus-urban-heat-island/" }
-    ],
-    overview:
-      "I built the data path from campus sensors to a research dashboard: validating incoming readings, storing them in normalized PostgreSQL tables, mapping sensor locations, surfacing stale/missing-data alerts, and making readings exportable for analysis.",
-    highlights: [
-      "Designed the sensor, gateway, zone, reading, and alert data model so field data could be queried reliably.",
-      "Built Node.js REST endpoints for registered sensor ingestion and dashboard requests.",
-      "Created Leaflet map views, zone and sensor filters, environmental trend panels, alert summaries, and CSV export.",
-      "Connected technical work with field deployment, professor feedback, and BU urban heat island research needs."
-    ],
-    gallery: [
+  "hero": {
+    "name": "Mohammed Sufiyan",
+    "role": "Data Engineer",
+    "summary": "I am a data engineer and Boston University Applied Data Analytics master’s student. I build Python and SQL pipelines, AWS S3 and Lambda workflows, and data quality checks using tools including Spark, Airflow, dbt, and Snowflake.",
+    "monogram": "MS",
+    "portrait": "https://github.com/suff28.png",
+    "stats": [
       {
-        title: "Live IoT dashboard",
-        caption: "Map, zone filtering, missing-data alerts, environmental trends, and export controls for campus sensors.",
-        image: "./assets/cleancampus/01-dashboard-real-capture.png"
+        "value": "3.9",
+        "label": "BU graduate GPA"
       },
       {
-        title: "Sensor data pipeline",
-        caption: "Field readings move from sensors to a Raspberry Pi gateway, through the Express API, into PostgreSQL, and back to the UI.",
-        image: "./assets/cleancampus/03-live-data-pipeline.gif"
+        "value": "10GB+",
+        "label": "daily ETL data handled"
       },
       {
-        title: "Fieldwork with professors",
-        caption: "Worked with Professor Bora Eryilmaz and Professor Yesim Sungu-Eryilmaz on field deployment and dashboard requirements.",
-        image: "./assets/cleancampus/04-fieldwork-with-professors.png"
-      },
-      {
-        title: "Sensor deployment",
-        caption: "Outdoor and indoor sensor placements for temperature, humidity, voltage, RSSI, and SNR monitoring across campus zones.",
-        image: "./assets/cleancampus/05-sensor-deployment-collage.png"
-      },
-      {
-        title: "Backend and frontend logic",
-        caption: "API validation, registered sensor checks, PostgreSQL inserts, bounded dashboard fetches, and safe UI requests.",
-        image: "./assets/cleancampus/02-code-overview-detailed.png"
-      },
-      {
-        title: "Planning before implementation",
-        caption: "Notebook planning for schemas, sensor fields, gateway-to-dashboard flow, and database/API behavior.",
-        image: "./assets/cleancampus/07-planning-notes-collage.png"
-      },
-      {
-        title: "Performance evaluation feedback",
-        caption: "BU evaluation feedback noted strong technical skills, attention to detail, responsiveness, and clear presentation.",
-        image: "./assets/cleancampus/06-evaluation-feedback.png"
+        "value": "40%",
+        "label": "faster processing at Power Tech"
       }
     ]
   },
-  education: [
+  "about": "I build data pipelines, warehouse models, and validation checks with Python, SQL, AWS, Spark, Airflow, dbt, and Snowflake. My work includes data engineering at Power Tech and research and analytics systems at Boston University.",
+  "skills": [
     {
-      title: "MS in Applied Data Analytics",
-      org: "Boston University",
-      meta: "Sep 2025 - Dec 2026 • GPA: 3.9",
-      description:
-        "Graduate coursework focused on analytics, databases, statistical modeling, applied machine learning, and data-driven software systems."
+      "category": "Data Quality & Testing",
+      "items": [
+        "ETL Testing",
+        "Regression Testing",
+        "Test Automation",
+        "pytest",
+        "Source-to-Target Validation",
+        "Data Reconciliation",
+        "Data Profiling",
+        "Data Validation"
+      ]
     },
     {
-      title: "B Tech in Computer Science and Engineering (Data Science)",
-      org: "Presidency University",
-      meta: "Sep 2020 - Jul 2024 • Bengaluru, India",
-      description:
-        "Undergraduate foundation in computer science, data science, software development, databases, and machine learning."
+      "category": "Data Engineering & Databases",
+      "items": [
+        "Python",
+        "Pandas",
+        "SQL",
+        "Snowflake",
+        "dbt",
+        "PostgreSQL",
+        "SQL Server",
+        "MySQL",
+        "Redis",
+        "Apache Airflow",
+        "Apache Spark",
+        "Redpanda",
+        "ETL",
+        "Data Warehousing",
+        "Data Modeling",
+        "Star Schema",
+        "Dimensional Modeling"
+      ]
+    },
+    {
+      "category": "Cloud & Tools",
+      "items": [
+        "AWS S3",
+        "AWS Lambda",
+        "Docker",
+        "Docker Compose",
+        "DigitalOcean",
+        "PM2",
+        "nginx",
+        "Power BI",
+        "Git"
+      ]
+    },
+    {
+      "category": "AI / ML & Backend",
+      "items": [
+        "scikit-learn",
+        "TensorFlow",
+        "OpenCV",
+        "Llama",
+        "Sentence-BERT",
+        "PPO",
+        "MATLAB",
+        "Node.js",
+        "FastAPI",
+        "Streamlit",
+        "REST APIs"
+      ]
     }
   ],
-  certificates: [],
-  certifications: [
+  "experience": [
     {
-      title: "Google Data Analytics Professional Certificate",
-      issuer: "Google / Coursera",
-      category: "Data Analytics",
-      href: "https://github.com/suff28/certificates/blob/main/google%20data%20analytics/google%20data%20analytics.pdf"
+      "title": "Data Engineer",
+      "org": "Power Tech",
+      "meta": "Jun 2024 - May 2025 • Bengaluru, India",
+      "description": "Built data cleaning, transformation, reporting, and AWS ETL workflows for business operations.",
+      "highlights": [
+        "Cut processing time by 40% with 25+ Python workflows across 17 datasets.",
+        "Improved reporting performance by 30% with 40+ SQL queries and five Power BI dashboards.",
+        "Processed 10GB+ daily with AWS S3 and Lambda; Dockerized four apps and reduced deployment from three hours to under 30 minutes."
+      ]
     },
     {
-      title: "Data Analysis with R Programming",
-      issuer: "Google / Coursera",
-      category: "R Programming",
-      href: "https://github.com/suff28/certificates/blob/main/google%20data%20analytics/Data%20Analysis%20with%20R%20Programming.pdf"
+      "title": "Graduate Research Assistant",
+      "org": "Boston University",
+      "meta": "Jan 2026 - Aug 2026 • Boston, MA",
+      "description": "Built data and dashboard systems for campus sensor research on urban heat islands.",
+      "highlights": [
+        "Designed a 29-table PostgreSQL schema and Node.js REST APIs for sensor data ingestion.",
+        "Analyzed campus temperatures in MATLAB and built a DigitalOcean-hosted Leaflet dashboard with trend views and missing-data alerts.",
+        "Presented the research at Boston University and ACSP 2026 in Pittsburgh."
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/suff28/cleancampus-urban-heat-island"
+        },
+        {
+          "label": "Case study",
+          "href": "#cleancampus"
+        }
+      ]
     },
     {
-      title: "Analyze Data to Answer Questions",
-      issuer: "Google / Coursera",
-      category: "Data Analysis",
-      href: "https://github.com/suff28/certificates/blob/main/google%20data%20analytics/Analyze%20Data%20to%20Answer%20Questions.pdf"
-    },
-    {
-      title: "Process Data from Dirty to Clean",
-      issuer: "Google / Coursera",
-      category: "Data Cleaning",
-      href: "https://github.com/suff28/certificates/blob/main/google%20data%20analytics/Process%20Data%20from%20Dirty%20to%20Clean.pdf"
-    },
-    {
-      title: "Share Data Through Visualization",
-      issuer: "Google / Coursera",
-      category: "Visualization",
-      href: "https://github.com/suff28/certificates/blob/main/google%20data%20analytics/Share%20Data%20Through%20the%20Art%20of%20Visualization.pdf"
-    },
-    {
-      title: "Cloud Computing",
-      issuer: "NPTEL / Online Certification",
-      category: "Cloud",
-      href: "https://github.com/suff28/certificates/blob/main/cloud%20computing.pdf"
-    },
-    {
-      title: "Ethical Hacking",
-      issuer: "NPTEL / Online Certification",
-      category: "Cybersecurity",
-      href: "https://github.com/suff28/certificates/blob/main/Ethical%20hacking.pdf"
-    },
-    {
-      title: "Johns Hopkins Certificate",
-      issuer: "Johns Hopkins",
-      category: "Professional Certificate",
-      href: "https://github.com/suff28/certificates/blob/main/john%20hopkins.pdf"
-    },
-    {
-      title: "Learning Analytics Tool",
-      issuer: "Academic / Technical Certificate",
-      category: "Analytics",
-      href: "https://github.com/suff28/certificates/blob/main/leaning%20analytic%20tool.pdf"
-    },
-    {
-      title: "Online Privacy",
-      issuer: "Professional Certificate",
-      category: "Privacy",
-      href: "https://github.com/suff28/certificates/blob/main/online%20privacy.pdf"
-    },
-    {
-      title: "SmartKnower Internship Certificate",
-      issuer: "SmartKnower",
-      category: "Internship",
-      href: "https://github.com/suff28/certificates/blob/main/smartknower/smartknower.jpg"
-    },
-    {
-      title: "Teachnook Certificate",
-      issuer: "Teachnook",
-      category: "Training",
-      href: "https://github.com/suff28/certificates/blob/main/teachnook/teachnook1.jpg"
-    },
-    {
-      title: "Younity Internship Certificate",
-      issuer: "Younity",
-      category: "Internship",
-      href: "https://github.com/suff28/certificates/blob/main/younity/younity%20internship.pdf"
+      "title": "Graduate Teaching Assistant",
+      "org": "Boston University",
+      "meta": "Sep 2026 - Present • Boston, MA",
+      "description": "Support 35 students through Zoom sessions and grading technical assignments, with clear feedback on their work."
     }
   ],
-  resume: {
-    href: "./assets/docs/Mohammed_Sufiyan_Resume.pdf",
-    label: "View Resume"
+  "research": [
+    {
+      "title": "Pix2Pix GAN Lung Segmentation for Chest Radiographs",
+      "org": "Published in IEEE",
+      "meta": "Sep 2024 - Apr 2025",
+      "description": "Trained a Pix2Pix U-Net using TensorFlow and OpenCV for lung segmentation in chest radiographs.",
+      "abstract": "The model achieved 98.25% accuracy and 98.05% Dice on the Montgomery dataset, and 95.87% accuracy on Shenzhen.",
+      "links": [
+        {
+          "label": "IEEE paper",
+          "href": "https://ieeexplore.ieee.org/document/10939550/"
+        },
+        {
+          "label": "Google Scholar",
+          "href": "https://scholar.google.com/citations?user=XSDrhfMAAAAJ&hl=en"
+        }
+      ]
+    },
+    {
+      "title": "LLMs in Reinforcement Learning: Comparative Analysis",
+      "org": "Accepted in IEEE",
+      "meta": "Nov 2025 - Present",
+      "description": "Compared Llama 2 7B and Sentence-BERT with PPO, using policy guidance and reward shaping.",
+      "abstract": "Across eight runs per method, the work raised mean DoorKey reward from 0.38 to 0.53."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Data Quality and ETL Validation Framework",
+      "meta": "Oct 2026",
+      "category": "Data Engineering / Warehouse Quality",
+      "description": "Generated 65.4M synthetic records locally and loaded a 65,443-row sample into Snowflake. The sample passed 46 dbt nodes, 97 Python regression tests, and 59 SQL quality checks across seven tables.",
+      "tags": [
+        "Python",
+        "SQL",
+        "dbt",
+        "Snowflake",
+        "AWS S3",
+        "Parquet",
+        "Data Quality"
+      ],
+      "image": "./assets/warehouse-quality/snowflake-raw-row-counts.png",
+      "featured": true,
+      "metrics": [
+        {
+          "value": "65.4M",
+          "label": "synthetic records generated locally"
+        },
+        {
+          "value": "65,443",
+          "label": "rows loaded to Snowflake"
+        },
+        {
+          "value": "97",
+          "label": "Python tests passed"
+        },
+        {
+          "value": "59",
+          "label": "SQL checks passed"
+        }
+      ],
+      "accent": "#c084fc",
+      "alt": "Snowflake results for warehouse sample",
+      "links": [
+        {
+          "label": "GitHub Project",
+          "href": "https://github.com/suff28/warehouse-quality-platform"
+        }
+      ]
+    },
+    {
+      "title": "Pipeline Health Monitor",
+      "meta": "Jan 2026",
+      "category": "Data Reliability",
+      "description": "Validated 100,000 synthetic orders locally with Spark and Airflow. Added Snowflake dbt models and tests, and tracked pipeline runs and rejected records in MySQL and Streamlit.",
+      "tags": [
+        "Python",
+        "Apache Spark",
+        "Apache Airflow",
+        "dbt",
+        "Snowflake",
+        "MySQL",
+        "Streamlit",
+        "Docker Compose"
+      ],
+      "image": "",
+      "art": "Pipeline Health",
+      "accent": "#6bf0d2",
+      "alt": "Pipeline Health Monitor project",
+      "links": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/suff28/datapulse-ai-self-healing-pipeline"
+        }
+      ]
+    },
+    {
+      "title": "Card Fraud Detection and Alerting Platform",
+      "meta": "Jun 2026",
+      "category": "Streaming Data Platform",
+      "description": "Scored 10,000+ simulated card transactions locally with Python rules and returned a risk score with reasons. Used Redpanda, PostgreSQL, and Redis for the streaming, storage, and alerting workflow.",
+      "tags": [
+        "Python",
+        "Redpanda",
+        "PostgreSQL",
+        "Redis",
+        "Docker Compose"
+      ],
+      "image": "",
+      "art": "Fraud Stream",
+      "accent": "#c084fc",
+      "alt": "Card fraud detection platform",
+      "links": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/suff28/finguard-fraud-intelligence-platform"
+        }
+      ]
+    },
+    {
+      "title": "Formula 1 Pit Stop Analysis and Prediction",
+      "meta": "Nov 2025",
+      "category": "Database / Analytics",
+      "description": "Modeled 54 SQL Server tables and a star schema. Cleaned 10,452 records with Python ETL and compared models for slow pit-stop prediction.",
+      "tags": [
+        "SQL Server",
+        "Python",
+        "ETL",
+        "Star Schema",
+        "scikit-learn"
+      ],
+      "image": "",
+      "art": "Pit Stop DBMS",
+      "accent": "#c084fc",
+      "alt": "Formula 1 database project",
+      "metrics": [
+        {
+          "value": "93.8%",
+          "label": "test accuracy"
+        },
+        {
+          "value": "0.875",
+          "label": "F1 score"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/suff28/formula1-pitstop-dbms"
+        }
+      ]
+    }
+  ],
+  "cleancampus": {
+    "title": "CleanCampus Urban Heat Island Dashboard",
+    "subtitle": "Boston University research project connecting campus sensor data, PostgreSQL, and a web dashboard for urban heat island analysis.",
+    "role": "Graduate Research Assistant",
+    "meta": "Boston University • Jan 2026 - Aug 2026",
+    "stack": [
+      "Node.js",
+      "PostgreSQL",
+      "REST APIs",
+      "MATLAB",
+      "Leaflet",
+      "DigitalOcean"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/suff28/cleancampus-urban-heat-island"
+      },
+      {
+        "label": "Live Demo",
+        "href": "https://suff28.github.io/cleancampus-urban-heat-island/"
+      }
+    ],
+    "overview": "Designed a 29-table PostgreSQL schema and REST APIs for sensor data ingestion. Analyzed campus temperatures in MATLAB and deployed a Leaflet dashboard with sensor trends, missing-data alerts, and CSV export.",
+    "highlights": [
+      "Designed a 29-table PostgreSQL schema for sensor, gateway, zone, reading, and alert data.",
+      "Built Node.js REST APIs to validate and ingest campus sensor readings.",
+      "Analyzed temperatures in MATLAB and deployed a Leaflet dashboard on DigitalOcean.",
+      "Presented the Urban Heat Island research at Boston University and ACSP 2026 in Pittsburgh."
+    ],
+    "gallery": [
+      {
+        "title": "Live IoT dashboard",
+        "caption": "Map, zone filtering, missing-data alerts, environmental trends, and export controls for campus sensors.",
+        "image": "./assets/cleancampus/01-dashboard-real-capture.png"
+      },
+      {
+        "title": "Sensor data pipeline",
+        "caption": "Field readings move from sensors to a Raspberry Pi gateway, through the Express API, into PostgreSQL, and back to the UI.",
+        "image": "./assets/cleancampus/03-live-data-pipeline.gif"
+      },
+      {
+        "title": "Fieldwork with professors",
+        "caption": "Worked with Professor Bora Eryilmaz and Professor Yesim Sungu-Eryilmaz on field deployment and dashboard requirements.",
+        "image": "./assets/cleancampus/04-fieldwork-with-professors.png"
+      },
+      {
+        "title": "Sensor deployment",
+        "caption": "Outdoor and indoor sensor placements for temperature, humidity, voltage, RSSI, and SNR monitoring across campus zones.",
+        "image": "./assets/cleancampus/05-sensor-deployment-collage.png"
+      },
+      {
+        "title": "Backend and frontend logic",
+        "caption": "API validation, registered sensor checks, PostgreSQL inserts, bounded dashboard fetches, and safe UI requests.",
+        "image": "./assets/cleancampus/02-code-overview-detailed.png"
+      },
+      {
+        "title": "Planning before implementation",
+        "caption": "Notebook planning for schemas, sensor fields, gateway-to-dashboard flow, and database/API behavior.",
+        "image": "./assets/cleancampus/07-planning-notes-collage.png"
+      },
+      {
+        "title": "Performance evaluation feedback",
+        "caption": "BU evaluation feedback noted strong technical skills, attention to detail, responsiveness, and clear presentation.",
+        "image": "./assets/cleancampus/06-evaluation-feedback.png"
+      }
+    ]
   },
-  github: {
-    href: "https://github.com/suff28",
-    label: "GitHub"
+  "education": [
+    {
+      "title": "MS in Applied Data Analytics",
+      "org": "Boston University",
+      "meta": "Sep 2025 - Dec 2026 • GPA: 3.9",
+      "description": "Final semester; available to start work January 15, 2027."
+    },
+    {
+      "title": "B.Tech in Computer Science and Engineering (Data Science)",
+      "org": "Presidency University",
+      "meta": "Sep 2020 - Jul 2024 • Bengaluru, India",
+      "description": "Bachelor of Technology in Computer Science and Engineering, specializing in Data Science."
+    }
+  ],
+  "certificates": [],
+  "certifications": [
+    {
+      "title": "Google Data Analytics Professional Certificate",
+      "issuer": "Google / Coursera",
+      "category": "Data Analytics",
+      "href": "https://github.com/suff28/certificates/blob/main/google%20data%20analytics/google%20data%20analytics.pdf"
+    },
+    {
+      "title": "Data Analysis with R Programming",
+      "issuer": "Google / Coursera",
+      "category": "R Programming",
+      "href": "https://github.com/suff28/certificates/blob/main/google%20data%20analytics/Data%20Analysis%20with%20R%20Programming.pdf"
+    },
+    {
+      "title": "Analyze Data to Answer Questions",
+      "issuer": "Google / Coursera",
+      "category": "Data Analysis",
+      "href": "https://github.com/suff28/certificates/blob/main/google%20data%20analytics/Analyze%20Data%20to%20Answer%20Questions.pdf"
+    },
+    {
+      "title": "Process Data from Dirty to Clean",
+      "issuer": "Google / Coursera",
+      "category": "Data Cleaning",
+      "href": "https://github.com/suff28/certificates/blob/main/google%20data%20analytics/Process%20Data%20from%20Dirty%20to%20Clean.pdf"
+    },
+    {
+      "title": "Share Data Through Visualization",
+      "issuer": "Google / Coursera",
+      "category": "Visualization",
+      "href": "https://github.com/suff28/certificates/blob/main/google%20data%20analytics/Share%20Data%20Through%20the%20Art%20of%20Visualization.pdf"
+    },
+    {
+      "title": "Cloud Computing",
+      "issuer": "NPTEL / Online Certification",
+      "category": "Cloud",
+      "href": "https://github.com/suff28/certificates/blob/main/cloud%20computing.pdf"
+    },
+    {
+      "title": "Ethical Hacking",
+      "issuer": "NPTEL / Online Certification",
+      "category": "Cybersecurity",
+      "href": "https://github.com/suff28/certificates/blob/main/Ethical%20hacking.pdf"
+    },
+    {
+      "title": "Johns Hopkins Certificate",
+      "issuer": "Johns Hopkins",
+      "category": "Professional Certificate",
+      "href": "https://github.com/suff28/certificates/blob/main/john%20hopkins.pdf"
+    },
+    {
+      "title": "Learning Analytics Tool",
+      "issuer": "Academic / Technical Certificate",
+      "category": "Analytics",
+      "href": "https://github.com/suff28/certificates/blob/main/leaning%20analytic%20tool.pdf"
+    },
+    {
+      "title": "Online Privacy",
+      "issuer": "Professional Certificate",
+      "category": "Privacy",
+      "href": "https://github.com/suff28/certificates/blob/main/online%20privacy.pdf"
+    },
+    {
+      "title": "SmartKnower Internship Certificate",
+      "issuer": "SmartKnower",
+      "category": "Internship",
+      "href": "https://github.com/suff28/certificates/blob/main/smartknower/smartknower.jpg"
+    },
+    {
+      "title": "Teachnook Certificate",
+      "issuer": "Teachnook",
+      "category": "Training",
+      "href": "https://github.com/suff28/certificates/blob/main/teachnook/teachnook1.jpg"
+    },
+    {
+      "title": "Younity Internship Certificate",
+      "issuer": "Younity",
+      "category": "Internship",
+      "href": "https://github.com/suff28/certificates/blob/main/younity/younity%20internship.pdf"
+    }
+  ],
+  "resume": {
+    "href": "./assets/docs/Mohammed_Sufiyan_Resume.pdf",
+    "label": "View Resume"
   },
-  contact: {
-    text:
-      "I am open to data analyst, data engineer, machine learning, and applied AI opportunities. The fastest way to reach me is by email or LinkedIn.",
-    links: [
-      { label: "Email", href: "mailto:suff280602@gmail.com", primary: true },
-      { label: "LinkedIn", href: "https://www.linkedin.com/in/suff28" },
-      { label: "GitHub", href: "https://github.com/suff28" },
-      { label: "Google Scholar", href: "https://scholar.google.com/citations?user=XSDrhfMAAAAJ&hl=en" }
+  "github": {
+    "href": "https://github.com/suff28",
+    "label": "GitHub"
+  },
+  "contact": {
+    "text": "I am completing my MS in Applied Data Analytics at Boston University and am available to start work on January 15, 2027. I am interested in data engineering and data quality roles.",
+    "links": [
+      {
+        "label": "Email",
+        "href": "mailto:suff280602@gmail.com",
+        "primary": true
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/suff28"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/suff28"
+      },
+      {
+        "label": "Google Scholar",
+        "href": "https://scholar.google.com/citations?user=XSDrhfMAAAAJ&hl=en"
+      }
     ]
   }
 };
